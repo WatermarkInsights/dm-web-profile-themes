@@ -1,7 +1,7 @@
 {
   "name": "tabbed",
   "displayName": "Tabbed",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A tabbed theme for Faculty Web Profiles by Digital Measures",
   "main": "tabbed.js",
   "license": "MIT"
