@@ -1,0 +1,9 @@
+{
+  "name": "{{THEME_ID}}",
+  "displayName": "{{DISPLAY_NAME}}",
+  "version": "1.0.0",
+  "description": "",
+  "main": "{{THEME_ID}}.js",
+  "author": "",
+  "license": "MIT"
+}
