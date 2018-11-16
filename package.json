@@ -1,6 +1,6 @@
 {
   "name": "dm-web-profile-themes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Monorepo of themes for Faculty Web Profiles by Digital Measures",
   "scripts": {
     "create-theme": "node ./bin/create-theme",
