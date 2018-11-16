@@ -2,8 +2,7 @@
 
 The tabbed theme will generate the web profile as a series of sections, each which can be displayed via activating its tab.
 
-The tabs should be set up inside the report template using the web profile content section toggle available on the edit toolbar of section headings. For more information, see:
-https://git.digitalmeasures.com/eng-front-end/dm-web-profiles#building-a-template
+The tabs should be set up inside the report template using the web profile content section toggle available on the edit toolbar of section headings.
 
 If a preamble is included, it will be placed above the tab controls as a static, non-tabbed section. Likewise, the first image included inside the preamble will be assumed to be the faculty member's profile image.
 
