@@ -20,7 +20,7 @@ Before spending a lot of time working on a new feature and submitting a pull req
 
 ## Developer Certificate of Origin (DCO)
 
-We ask that all contributors sign off on commits with the [Developer Certificate of Origin](https://developercertificate.org/). Compliance is automated using [Probot: DCO](https://github.com/probot/dco).
+We ask that all contributors sign off on commits with the [Developer Certificate of Origin](https://developercertificate.org/). Compliance is automated using [Probot: DCO](https://github.com/probot/dco). Pull requests should come from a branch or forked repo.
 
 Details on how to sign your commits from [probot/dco](https://github.com/probot/dco):
 
