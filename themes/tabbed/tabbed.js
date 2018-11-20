@@ -366,10 +366,12 @@
 			var link = tab.querySelector('.' + Class.Tabs.Link);
 			if (tab.className.match(regex)) {
 				tab.className = tab.className.replace(regex, ' ');
+				link.setAttribute('aria-selected', 'false');
 				link.setAttribute('tabindex', '-1');
 			}
 			if (isTabSelected(tab.getAttribute(HashAttribute), index)) {
 				tab.className += ' ' + Class.Tabs.ItemActive;
+				link.setAttribute('aria-selected', 'true');
 				link.setAttribute('tabindex', '0');
 			}
 		});
