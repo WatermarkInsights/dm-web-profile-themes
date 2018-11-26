@@ -14,6 +14,7 @@
     * [`records`](#records)
     * [`groups`](#groups)
 * [Creating a preview image](#creating-a-preview-image)
+* [Handling errors](#handling-errors)
 
 ## Before you proceed
 
@@ -306,3 +307,16 @@ To create a preview image:
 4. Resize your browser window, and capture a screenshot. Ensure image complies with above specifications.
 5. Rename the image to be `themeId.png`, and place it inside your theme's directory
 6. Remove the CSS added above from your theme
+
+## Handling errors
+
+A generic error message is provided for any errors returned by the web profiles API endpoint. If you would like to customize error handling with more specific messages, the table below lists error codes returned from the endpoint. Most errors stem from how the profile is invoked using the [`showProfile` method in the code snippet](cms-usage.md#showprofile-function).
+
+Code | Message               | Note
+---- | --------------------- | ----
+4605 | `UNKNOWN_ERROR_CODE`  | ¯\\\_(ツ)\_/¯
+5001 | `NO_AUTH_TOKEN`       | Authorization for the endpoint is missing
+5002 | `USER_NOT_FOUND`      | The specified username cannot be found in the system
+5003 | `REPORT_NOT_FOUND`    | The specified report ID does not exist
+5004 | `REPORT_NOT_PROFILE`  | The specified report ID is not enabled for web profiles. Contact your Digital Measures admin for information on resolving this issue.
+5005 | `NO_TRACK_ACTIVITIES` | The specified username does not have "Track Activities" enabled. Contact your Digital Measures admin for information on resolving this issue.
