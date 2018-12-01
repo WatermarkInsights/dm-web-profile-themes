@@ -346,7 +346,6 @@
 		);
 		if (
 			reportSection.className
-				.split(' ')
 				.indexOf(Class.Sections.StaticSection) === -1
 		) {
 			reportSection.className += ' ' + Class.Sections.StaticSection;
