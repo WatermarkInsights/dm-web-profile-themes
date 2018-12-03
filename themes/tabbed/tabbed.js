@@ -342,7 +342,7 @@
 	 */
 	function addPreambleReportSectionClassName(result) {
 		var reportSection = result.querySelector(
-			toClassSelector(Class.Sections.ReportSection.Base)
+			toClassSelector(Class.ReportSection.Base)
 		);
 		if (
 			reportSection.className
