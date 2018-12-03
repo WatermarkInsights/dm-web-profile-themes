@@ -21,8 +21,7 @@
 		},
 		Break: 'dm-profile-break',
 		Sections: {
-			Base: 'dm-profile-sections',
-			StaticSection: 'dm-profile-section--static--inner'
+			Base: 'dm-profile-sections'
 		},
 		Section: {
 			Base: 'dm-profile-section',
@@ -30,12 +29,9 @@
 			Static: 'dm-profile-section--static',
 			Tabbed: 'dm-profile-section--tabbed'
 		},
-		Preamble: {
-			Contents: 'dm-profile-preamble--contents'
-		},
 		Content: 'dm-profile-content',
 		MainImage: {
-			TopLevel: 'dm-profile-section--static--with-main-image',
+			TopLevel: 'dm-profile-preamble--with-main-image',
 			Section: 'dm-profile-section--main-image',
 			Image: 'dm-profile-main-image'
 		},
@@ -338,21 +334,6 @@
 	}
 
 	/**
-	 * Appends a theme-specific class name to the report section inside the preamble
-	 */
-	function addPreambleReportSectionClassName(result) {
-		var reportSection = result.querySelector(
-			toClassSelector(Class.ReportSection.Base)
-		);
-		if (
-			reportSection.className
-				.indexOf(Class.Sections.StaticSection) === -1
-		) {
-			reportSection.className += ' ' + Class.Sections.StaticSection;
-		}
-	}
-
-	/**
 	 * Renders the preamble for the tabbed profile.
 	 * All items at top of report before the first web profile content section are part of the preamble.
 	 * The first image inside of the preamble is also rehoused and treated as a profile picture for this theme.
@@ -367,7 +348,6 @@
 		if (images.length) {
 			moveProfileImage(result, images[0]);
 		}
-		addPreambleReportSectionClassName(result);
 
 		return result;
 	}
