@@ -33,4 +33,4 @@ Multi-class CSS selectors used by the tabbed theme are as follows:
 | ----------------------------------------------------------------- | ------------------------------------------------------- |
 | `.dm-profile-preamble .dm-profile-heading`              	        | Stylized level 2 heading inside the static section      |
 | `.dm-profile-preamble .dm-profile-content .dm-profile-activities` | Additional styling for activities inside static section |
-| `.dm-profile-tabs__item--active .dm-profile-tabs__link::afters`    | Displays icon next to active tab in mobile view         |
+| `.dm-profile-tabs__item--active .dm-profile-tabs__link::afters`   | Displays icon next to active tab in mobile view         |
