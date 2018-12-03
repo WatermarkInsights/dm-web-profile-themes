@@ -17,7 +17,7 @@
 	box-sizing: border-box;
 }
 
-.dm-profile-section--static .dm-profile-heading--level-2 {
+.dm-profile-preamble .dm-profile-heading--level-2 {
 	background-color: rgb(255, 255, 255);
 	color: rgb(1, 68, 85);
 	display: inline-block;
@@ -26,7 +26,7 @@
 	text-transform: uppercase;
 }
 
-.dm-profile-section--static .dm-profile-content .dm-profile-activities {
+.dm-profile-preamble .dm-profile-content .dm-profile-activities {
 	text-align: left;
 }
 
