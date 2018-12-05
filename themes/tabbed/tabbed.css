@@ -10,14 +10,14 @@
 	height: auto;
 }
 
-.dm-profile-section--static {
+.dm-profile-preamble {
 	background-color: rgb(1, 68, 85);
 	color: rgb(255, 255, 255);
 	padding: 1.5rem 1.5rem 1rem 3rem;
 	box-sizing: border-box;
 }
 
-.dm-profile-section--static .dm-profile-heading--level-2 {
+.dm-profile-preamble .dm-profile-heading {
 	background-color: rgb(255, 255, 255);
 	color: rgb(1, 68, 85);
 	display: inline-block;
@@ -26,7 +26,12 @@
 	text-transform: uppercase;
 }
 
-.dm-profile-section--static .dm-profile-content .dm-profile-activities {
+.dm-profile-preamble .dm-profile-activities {
+	background-color: rgb(1, 68, 85);
+	color: rgb(255, 255, 255);
+}
+
+.dm-profile-preamble .dm-profile-content .dm-profile-activities {
 	text-align: left;
 }
 
@@ -94,12 +99,12 @@
 	padding: 0;
 }
 
-.dm-profile-section--static--inner {
+.dm-profile-preamble .dm-profile-report-section {
 	box-sizing: border-box;
 	width: 100%;
 }
 
-.dm-profile-section--static--with-main-image {
+.dm-profile-preamble--with-main-image {
 	padding: 0;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -108,7 +113,9 @@
 	flex-wrap: wrap;
 }
 
-.dm-profile-section--main-image + .dm-profile-section--static--inner {
+.dm-profile-preamble
+	.dm-profile-section--main-image
+	+ .dm-profile-report-section {
 	padding: 1em 1em 0;
 }
 
@@ -156,7 +163,9 @@
 		max-width: 100%;
 	}
 
-	.dm-profile-section--main-image + .dm-profile-section--static--inner {
+	.dm-profile-preamble
+		.dm-profile-section--main-image
+		+ .dm-profile-report-section {
 		display: inline-block;
 		vertical-align: top;
 		padding-left: 1.5rem;
