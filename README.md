@@ -8,9 +8,9 @@ A theme can be used to alter the rendering of and add style to a web profile. **
 
 ### Tabbed
 
-![Preview image for tabbed theme](themes/tabbed/tabbed.png)
-
 The [Tabbed theme](themes/tabbed/README.md) lays out individual sections of a web profile into separate tabs, which also easier organization and navigation of the content in the profile. You can also create a preamble section that is always visible, ideal for displaying a photo and biography of a faculty member.
+
+[See a live preview of the tabbed theme at our demo site](https://youru.digitalmeasures.com/faculty-directory/web-profile/?username=educationf).
 
 ## For Client Admins
 
