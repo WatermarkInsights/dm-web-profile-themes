@@ -44,6 +44,7 @@ You can alter the rendering of the web profile by passing various options to `sh
 | `includeStyles`  | Yes  | No   | `true` | When true, styles applied to activities sections inside the report builder will also be included in the web profile output |
 | `container`      | No   | No   | `'#dm-web-profile-root'` | DOM query selector for the container element in which the web profile will be rendered. Should be an empty element on the page. |
 | `theme`          | No   | No   | `'default'` | A function that accepts a web profile object, and returns a rendered DOM element containing the profile. Renders full profile as single page by default. |
+| `excludeEmptyPrimaryContentSections` | Yes  | No   | `false` | When true, headings indicating primary web profile content sections inside the report builder will be excluded from the profile when there are no contents (records or text). |
 
 ### Showing Multiple Profiles on a Single Page
 
