@@ -417,15 +417,17 @@
 			result.appendChild(renderPreambleSection(profile));
 		}
 
-		result.appendChild(renderTabbedControls(profile));
-		result.appendChild(
-			createEl('hr', {
-				class: Class.Break
-			})
-		);
-		result.appendChild(renderTabbedDocument(profile));
+		if (profile.contentSections.length) {
+			result.appendChild(renderTabbedControls(profile));
+			result.appendChild(
+				createEl('hr', {
+					class: Class.Break
+				})
+			);
+			result.appendChild(renderTabbedDocument(profile));
 
-		window.addEventListener('hashchange', onHashChange);
+			window.addEventListener('hashchange', onHashChange);
+		}
 
 		return result;
 	}
