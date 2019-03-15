@@ -29,6 +29,38 @@ window.dmWebProfiles.showProfile({
 });
 ```
 
+### Optional callback
+
+There are two ways to run code after the profile has fulled rendered. Whichever method you chose is up to you, they will both run after render (if supplied). You do not need, nor is it recommended, to use **both** the Promise **and** the callback methods.
+
+1. `showProfile` returns a Promise after the profile has finished rendering.
+
+```javascript
+window.dmWebProfiles.showProfile({
+  container: '#dm-web-profile-root',
+  clientId: 'a0454dad-c52f-426f-8f45-f0e487f95444',
+  reportId: 'f8a61015-dcb7-42a3-a4dd-570c197a9524',
+  username: 'afuger',
+  theme: 'tabbed'
+}).then(function() {
+  // now you can work with the web profile DOM!
+});
+```
+
+2. `showProfile` accepts an optional callback function as its second argument.
+
+```javascript
+window.dmWebProfiles.showProfile({
+  container: '#dm-web-profile-root',
+  clientId: 'a0454dad-c52f-426f-8f45-f0e487f95444',
+  reportId: 'f8a61015-dcb7-42a3-a4dd-570c197a9524',
+  username: 'afuger',
+  theme: 'tabbed'
+}, function() {
+  // now you can work with the web profile DOM!
+});
+```
+
 ### Options
 
 You can alter the rendering of the web profile by passing various options to `showProfile`. If an option is not provided, it may be resolved via a query parameter using the name as the key. When both are provided, the query param is silently ignored.
