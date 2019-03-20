@@ -31,7 +31,7 @@ window.dmWebProfiles.showProfile({
 
 ### Optional callback
 
-There are two ways to run code after the profile has fulled rendered. Whichever method you chose is up to you, they will both run after render (if supplied). You do not need, nor is it recommended, to use **both** the Promise **and** the callback methods.
+There are two ways to run code after the profile has fully rendered. Whichever method you choose is up to you, they will both run after render (if supplied). You do not need, nor is it recommended, to use **both** the Promise **and** the callback methods.
 
 1. `showProfile` returns a Promise after the profile has finished rendering.
 
